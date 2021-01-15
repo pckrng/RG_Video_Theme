@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat&display=swap');
 
 .navBar {
     width: 100%;
@@ -20,7 +23,7 @@
 
   .menu {
       float: right;
-      margin-right: 3vw;
+      margin-right: 5vw;
       margin-top: 2.5vh;
       cursor: pointer;
 
@@ -48,7 +51,7 @@
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
     transition: 0.5s;
     margin-top: 10vh;
@@ -69,6 +72,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: 'Inconsolata', monospace;
   }
   
   .overlay a:hover, .overlay a:focus {
@@ -89,3 +93,24 @@
     float: right;
     margin-top: -25vh;
   }
+
+  .mainVideo {
+    width: 90vw;
+    padding-left: 5vw;
+    
+    height: 70vh;
+  }
+
+  h1 {
+    font-family: 'Inconsolata', monospace;
+  }
+
+  .contentArea {
+    padding-top: 11vh;
+    padding-left: 5vw;
+    min-width: 100px;
+    max-width: 500px;
+    padding-bottom: 2vh;
+  }
+
+ 
