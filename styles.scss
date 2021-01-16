@@ -168,8 +168,6 @@ body {
   max-width: 70%;
   font-family: 'Inconsolata', monospace;
   color: #BFBFBF;
-  margin-left: auto 0;
-  margin-right: auto 0;
   text-align: left;
   margin-top: -10rem;
   left: 5%;
@@ -182,16 +180,12 @@ body {
   text-transform: uppercase;
   position: relative;
   width: 100%;
+  
 }
 
 #over a:hover, #overTwo a:hover {
   color: #BFBFBF;
 }
-
-
-
-
-
 
 .navBar h1 {
   position: absolute;
