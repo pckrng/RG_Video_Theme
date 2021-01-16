@@ -18,7 +18,7 @@
 .foldOutOne, .foldOutTwo, .foldOutThree {
     width: 35px;
     height: 5px;
-    background-color: #59564F;
+    background-color: rgb(185, 193, 201);
     margin: 6px 0;
     border-radius: 8px;
   }
@@ -166,7 +166,7 @@ body {
 #over, #overTwo {  
   position: absolute;
   display: flex; 
-  top: 40%;
+  top: 50%;
   left: 25%; 
   z-index: 1;
   font-family: 'Inconsolata', monospace;
@@ -176,6 +176,11 @@ body {
   right: 25%;
 }
 
+#over a {
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  color: rgb(185, 193, 201);
+}
 
 
 
@@ -195,7 +200,7 @@ body {
 
 .navBar h1 {
   position: absolute;
-  color: #59564F;
+  color: rgb(185, 193, 201);
   margin-top: 1vh;
   font-size: 58px;
 }

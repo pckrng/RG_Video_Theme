@@ -17,7 +17,7 @@
 .foldOutOne, .foldOutTwo, .foldOutThree {
   width: 35px;
   height: 5px;
-  background-color: #59564F;
+  background-color: #b9c1c9;
   margin: 6px 0;
   border-radius: 8px;
 }
@@ -165,7 +165,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 40%;
+  top: 50%;
   left: 25%;
   z-index: 1;
   font-family: 'Inconsolata', monospace;
@@ -173,6 +173,12 @@ body {
   margin-left: auto;
   text-align: center;
   right: 25%;
+}
+
+#over a {
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  color: #b9c1c9;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -191,7 +197,7 @@ body {
 
 .navBar h1 {
   position: absolute;
-  color: #59564F;
+  color: #b9c1c9;
   margin-top: 1vh;
   font-size: 58px;
 }
