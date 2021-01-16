@@ -118,13 +118,10 @@ h1, h2 {
   margin: 0 auto;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
   z-index: -100;
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
-  margin-top: 10vh;
 }
 
 .embed-container {
@@ -162,37 +159,29 @@ body {
 
 #over, #overTwo {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 50%;
-  left: 25%;
+  vertical-align: middle;
   z-index: 1;
+  max-width: 70%;
   font-family: 'Inconsolata', monospace;
   color: #BFBFBF;
-  margin-left: auto;
-  text-align: center;
-  right: 25%;
+  margin-left: auto 0;
+  margin-right: auto 0;
+  text-align: left;
+  margin-top: -10rem;
+  left: 5%;
 }
 
-#over a {
+#over a, #overTwo a {
   text-decoration: none;
   font-family: 'Inconsolata', monospace;
-  color: #b9c1c9;
+  color: #cbd2d8;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  #over {
-    font-size: 80px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  #over {
-    font-size: 30px;
-  }
+#over a:hover, #overTwo a:hover {
+  color: #BFBFBF;
 }
 
 .navBar h1 {
