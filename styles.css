@@ -160,23 +160,19 @@ body {
   /* Firefox */
 }
 
-.videoOne, .videoTwo {
-  position: relative;
-}
-
 #over, #overTwo {
   position: absolute;
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 40%;
+  left: 25%;
   z-index: 1;
   font-family: 'Inconsolata', monospace;
   color: #BFBFBF;
-  padding-left: 4vw;
-  padding-top: 2vh;
-  padding-top: 10VH;
-}
-
-#over, #overTwo p {
-  max-width: 40%;
+  margin-left: auto;
+  text-align: center;
+  right: 25%;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
