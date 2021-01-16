@@ -11,6 +11,7 @@
   height: 10%;
   position: fixed;
   z-index: 100;
+  background-color: rgba(121, 121, 121, 0.185);
 }
 
 .foldOutOne, .foldOutTwo, .foldOutThree {
@@ -123,6 +124,7 @@ h1, h2 {
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
+  margin-top: 10vh;
 }
 
 .embed-container {
@@ -192,10 +194,13 @@ body {
 }
 
 .navBar h1 {
-  margin-left: 45vw;
-  color: #BFBFBF;
   position: absolute;
-  margin-top: 2vh;
-  font-size: 48px;
+  color: #59564F;
+  margin-top: 1vh;
+  font-size: 4vw;
+}
+
+.headerContainer {
+  margin-left: 5vw;
 }
 /*# sourceMappingURL=styles.css.map */
