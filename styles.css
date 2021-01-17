@@ -180,4 +180,9 @@ body::-webkit-scrollbar {
   background-image: url(./lab3.jpg);
   height: 100%;
 }
+
+.theLabBackgroundThree {
+  background-image: url(./lab4.jpg);
+  height: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
