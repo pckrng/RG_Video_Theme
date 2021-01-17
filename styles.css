@@ -2,8 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("NetworkFreeVersion.eot");
+  /* IE9 Compat Modes */
+  src: url("NetworkFreeVersion.eot?#iefix") format("embedded-opentype"), url("NetworkFreeVersion.woff") format("woff"), url("NetworkFreeVersion.ttf") format("truetype"), url("NetworkFreeVersion.svg") format("svg");
+  /* Legacy iOS */
 }
 
 body {
@@ -108,8 +115,8 @@ body {
   height: 70vh;
 }
 
-h1, h2 {
-  font-family: 'Inconsolata', monospace;
+h1 {
+  font-family: 'MyWebFont';
 }
 
 .contentArea {
@@ -152,5 +159,10 @@ body::-webkit-scrollbar {
 
 .headerContainer {
   margin-left: 5vw;
+  width: 100%;
+}
+
+.headerContainer h1 {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
