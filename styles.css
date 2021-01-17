@@ -6,6 +6,11 @@
   overflow-x: hidden;
 }
 
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .navBar {
   width: 100%;
   height: 10%;
@@ -114,72 +119,28 @@ h1, h2 {
   padding-bottom: 2vh;
 }
 
-.videoContainerOne {
-  margin: 0 auto;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100;
-  background-size: cover;
-  -webkit-transition: 1s opacity;
-  transition: 1s opacity;
-}
-
-.embed-container {
-  --video--width: 1296;
-  --video--height: 540;
+.videoOne, .videoTwo, .videoThree, .videoFour {
   position: relative;
-  padding-bottom: calc(var(--video--height) / var(--video--width) * 100%);
-  /* 41.66666667% */
-  overflow: hidden;
-  max-width: 100%;
-  background: black;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.videoOne a, .videoTwo a, .videoThree a, .videoFour a {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
   width: 100%;
-  height: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  color: #cbd2d8;
+}
+
+.videoOne a:hover, .videoTwo a:hover, .videoThree a:hover, .videoFour a:hover {
+  color: #FF7276;
 }
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-#over, #overTwo {
-  position: absolute;
-  vertical-align: middle;
-  z-index: 1;
-  max-width: 70%;
-  font-family: 'Inconsolata', monospace;
-  color: #BFBFBF;
-  text-align: left;
-  margin-top: -10rem;
-  left: 5%;
-}
-
-#over a, #overTwo a {
-  text-decoration: none;
-  font-family: 'Inconsolata', monospace;
-  color: #cbd2d8;
-  text-transform: uppercase;
-  position: relative;
-  width: 100%;
-}
-
-#over a:hover, #overTwo a:hover {
-  color: #BFBFBF;
 }
 
 .navBar h1 {
