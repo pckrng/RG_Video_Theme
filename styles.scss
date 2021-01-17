@@ -36,6 +36,10 @@ body {
   border-radius: 8px;
 }
 
+.foldOutOne:hover, .foldOutTwo:hover, .foldOutThree:hover {
+  cursor: pointer;
+}
+
 .menu {
   float: right;
   margin-right: 5vw;
@@ -153,12 +157,12 @@ body::-webkit-scrollbar {
   color: rgb(185, 193, 201);
   margin-top: 1vh;
   font-size: 55px;
-  width: 50%;
+  width: 30%;
 }
 
 .headerContainer {
   margin-left: 5vw;
-  width: 100%;
+  width: 70%;
 }
 
 
