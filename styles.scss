@@ -13,9 +13,10 @@
        url('NetworkFreeVersion.svg') format('svg'); /* Legacy iOS */
 }
 
-body {
+body, html {
   -ms-overflow-style: none; 
   scrollbar-width: none;  
+  height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat&display=swap');
@@ -165,4 +166,15 @@ body::-webkit-scrollbar {
   width: 70%;
 }
 
+.theLabBackground {
+  background-image: url(./lab1.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.theLabBackgroundTwo {
+  background-image: url(./lab3.jpg);
+  height: 100%;
+}

@@ -13,9 +13,10 @@
   /* Legacy iOS */
 }
 
-body {
+body, html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  height: 100%;
 }
 
 .navBar {
@@ -165,5 +166,18 @@ body::-webkit-scrollbar {
 .headerContainer {
   margin-left: 5vw;
   width: 70%;
+}
+
+.theLabBackground {
+  background-image: url(./lab1.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.theLabBackgroundTwo {
+  background-image: url(./lab3.jpg);
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
