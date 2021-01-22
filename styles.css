@@ -133,6 +133,7 @@ h1 {
 
 .videoOne, .videoTwo, .videoThree, .videoFour {
   position: relative;
+  overflow: hidden;
 }
 
 .videoOne a, .videoTwo a, .videoThree a, .videoFour a {
@@ -174,6 +175,8 @@ body::-webkit-scrollbar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 8%;
+  padding-left: 10%;
 }
 
 .theLabBackgroundTwo {
@@ -184,5 +187,8 @@ body::-webkit-scrollbar {
 .theLabBackgroundThree {
   background-image: url(./lab4.jpg);
   height: 100%;
+  overflow: hidden;
+  padding-top: 15%;
+  padding-left: 15%;
 }
 /*# sourceMappingURL=styles.css.map */
