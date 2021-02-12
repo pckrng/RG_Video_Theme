@@ -1,38 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 @font-face {
   font-family: 'MyWebFont';
-  src: url('NetworkFreeVersion.eot'); /* IE9 Compat Modes */
-  src: url('NetworkFreeVersion.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NetworkFreeVersion.woff') format('woff'), /* Modern Browsers */
-       url('NetworkFreeVersion.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NetworkFreeVersion.svg') format('svg'); /* Legacy iOS */
+  src: url("NetworkFreeVersion.eot");
+  /* IE9 Compat Modes */
+  src: url("NetworkFreeVersion.eot?#iefix") format("embedded-opentype"), url("NetworkFreeVersion.woff") format("woff"), url("NetworkFreeVersion.ttf") format("truetype"), url("NetworkFreeVersion.svg") format("svg");
+  /* Legacy iOS */
 }
 
 body, html {
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   height: 100%;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat&display=swap');
 
 .navBar {
   width: 100%;
   height: 10%;
+  padding-top: 1rem;
   position: fixed;
   z-index: 100;
-  background-color: rgba(121, 121, 121, 0.185);
+  background-color: #111010;
 }
 
 .foldOutOne, .foldOutTwo, .foldOutThree {
   width: 35px;
   height: 5px;
-  background-color: rgb(185, 193, 201);
+  background-color: #b9c1c9;
   margin: 6px 0;
   border-radius: 8px;
 }
@@ -44,7 +43,7 @@ body, html {
 .menu {
   float: right;
   margin-right: 5vw;
-  margin-top: 2.5vh;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -52,11 +51,11 @@ body, html {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-  
+
 .change .foldOutTwo {
   opacity: 0;
 }
-  
+
 .change .foldOutThree {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
@@ -69,13 +68,13 @@ body, html {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: white;
-  background-color: white;
+  background-color: #2b2b2b;
   overflow-x: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 10vh;
 }
-  
+
 .overlay-content {
   position: relative;
   top: 25%;
@@ -83,29 +82,34 @@ body, html {
   text-align: center;
   margin-top: 30px;
 }
-  
+
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
 }
-  
+
 .overlay a:hover, .overlay a:focus {
-  color: #BFBFBF;
+  color: #FF7276;
 }
-  
-  
+
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
- }
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 .closeMenu {
@@ -139,12 +143,17 @@ h1 {
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   font-family: 'Inconsolata', monospace;
-  color: rgb(203, 210, 216);
+  color: #cbd2d8;
+  text-shadow: 1px 1px 8px rgba(129, 129, 129, 0.582);
+  letter-spacing: 4px;
 }
+
 .videoOne a:hover, .videoTwo a:hover, .videoThree a:hover, .videoFour a:hover {
   color: #FF7276;
 }
@@ -153,12 +162,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
 .navBar h1 {
   position: absolute;
-  color: rgb(185, 193, 201);
-  margin-top: 1vh;
-  font-size: 55px;
+  color: #b9c1c9;
+  font-size: 3rem;
   width: 30%;
 }
 
@@ -186,7 +193,7 @@ body::-webkit-scrollbar {
   background-image: url(./lab4.jpg);
   height: 100%;
   overflow: hidden;
-   padding-top: 15%;
+  padding-top: 15%;
   padding-left: 15%;
-  
 }
+/*# sourceMappingURL=styles.css.map */
