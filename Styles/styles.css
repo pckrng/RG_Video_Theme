@@ -6,14 +6,18 @@
 }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url("NetworkFreeVersion.eot");
+  font-family: "MyWebFont";
+  src: url("../Assets/NetworkFreeVersion.eot");
   /* IE9 Compat Modes */
-  src: url("NetworkFreeVersion.eot?#iefix") format("embedded-opentype"), url("NetworkFreeVersion.woff") format("woff"), url("NetworkFreeVersion.ttf") format("truetype"), url("NetworkFreeVersion.svg") format("svg");
+  src: url("../Assets/NetworkFreeVersion.eot") format("embedded-opentype"),
+    url("../Assets/NetworkFreeVersion.woff") format("woff"),
+    url("../Assets/NetworkFreeVersion.ttf") format("truetype"),
+    url("../Assets/NetworkFreeVersion.woff2") format("svg");
   /* Legacy iOS */
 }
 
-body, html {
+body,
+html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100%;
@@ -28,7 +32,9 @@ body, html {
   background-color: #111010;
 }
 
-.foldOutOne, .foldOutTwo, .foldOutThree {
+.foldOutOne,
+.foldOutTwo,
+.foldOutThree {
   width: 35px;
   height: 5px;
   background-color: #b9c1c9;
@@ -36,7 +42,9 @@ body, html {
   border-radius: 8px;
 }
 
-.foldOutOne:hover, .foldOutTwo:hover, .foldOutThree:hover {
+.foldOutOne:hover,
+.foldOutTwo:hover,
+.foldOutThree:hover {
   cursor: pointer;
 }
 
@@ -87,18 +95,19 @@ body, html {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #ffffff;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 4px;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #FF7276;
+.overlay a:hover,
+.overlay a:focus {
+  color: #ff7276;
 }
 
 @media screen and (max-height: 450px) {
@@ -124,7 +133,7 @@ body, html {
 }
 
 h1 {
-  font-family: 'MyWebFont';
+  font-family: "MyWebFont";
 }
 
 .contentArea {
@@ -134,28 +143,37 @@ h1 {
   padding-bottom: 2vh;
 }
 
-.videoOne, .videoTwo, .videoThree, .videoFour {
+.videoOne,
+.videoTwo,
+.videoThree,
+.videoFour {
   position: relative;
   overflow: hidden;
 }
 
-.videoOne a, .videoTwo a, .videoThree a, .videoFour a {
+.videoOne a,
+.videoTwo a,
+.videoThree a,
+.videoFour a {
   position: absolute;
   top: 50%;
   width: 100%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Inconsolata', monospace;
-  color: #cbd2d8;
+  font-family: "Inconsolata", monospace;
+  color: #ffffff;
   text-shadow: 1px 1px 8px rgba(129, 129, 129, 0.582);
   letter-spacing: 4px;
 }
 
-.videoOne a:hover, .videoTwo a:hover, .videoThree a:hover, .videoFour a:hover {
-  color: #FF7276;
+.videoOne a:hover,
+.videoTwo a:hover,
+.videoThree a:hover,
+.videoFour a:hover {
+  color: #ff7276;
 }
 
 body::-webkit-scrollbar {
@@ -164,7 +182,7 @@ body::-webkit-scrollbar {
 
 .navBar h1 {
   position: absolute;
-  color: #b9c1c9;
+  color: #ffffff;
   font-size: 3rem;
   width: 30%;
 }
