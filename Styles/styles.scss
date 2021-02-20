@@ -1,44 +1,50 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('NetworkFreeVersion.eot'); /* IE9 Compat Modes */
-  src: url('NetworkFreeVersion.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NetworkFreeVersion.woff') format('woff'), /* Modern Browsers */
-       url('NetworkFreeVersion.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NetworkFreeVersion.svg') format('svg'); /* Legacy iOS */
+  font-family: "MyWebFont";
+  src: url("../Assets/NetworkFreeVersion.eot"); /* IE9 Compat Modes */
+  src: url("../Assets/NetworkFreeVersion.eot") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../Assets/NetworkFreeVersion.woff") format("woff"),
+    /* Modern Browsers */ url("../Assets/NetworkFreeVersion.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../Assets/NetworkFreeVersion.woff2")
+      format("svg"); /* Legacy iOS */
 }
 
-body, html {
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  
+body,
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   height: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap");
 
 .navBar {
   width: 100%;
   height: 10%;
-  padding-top: 1rem;
+  padding-top: 0.7rem;
   position: fixed;
   z-index: 100;
-  background-color: rgb(17, 16, 16);
 }
 
-.foldOutOne, .foldOutTwo, .foldOutThree {
+.foldOutOne,
+.foldOutTwo,
+.foldOutThree {
   width: 35px;
   height: 5px;
-  background-color: rgb(185, 193, 201);
+  background-color: #f7b32b;
   margin: 6px 0;
   border-radius: 8px;
 }
 
-.foldOutOne:hover, .foldOutTwo:hover, .foldOutThree:hover {
+.foldOutOne:hover,
+.foldOutTwo:hover,
+.foldOutThree:hover {
   cursor: pointer;
 }
 
@@ -47,17 +53,18 @@ body, html {
   margin-right: 5vw;
   margin-top: 10px;
   cursor: pointer;
+  
 }
 
 .change .foldOutOne {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-  
+
 .change .foldOutTwo {
   opacity: 0;
 }
-  
+
 .change .foldOutThree {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
@@ -70,45 +77,46 @@ body, html {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgb(43, 43, 43);
+  background-color: #e6e3df;
   overflow-x: hidden;
   transition: 0.5s;
   margin-top: 10vh;
 }
-  
+
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
-  
+
 .overlay a {
-  padding: 8px;
+  padding: 2px;
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+  font-size: 5rem;
+  color: #e63946;
   display: block;
   transition: 0.3s;
-  font-family: 'Inconsolata', monospace;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 4px;
 }
-  
-.overlay a:hover, .overlay a:focus {
-  color: #FF7276;
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f7b32b;
 }
-  
-  
+
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
- }
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 .closeMenu {
@@ -123,7 +131,7 @@ body, html {
 }
 
 h1 {
-  font-family: 'MyWebFont';
+  font-family: "MyWebFont";
 }
 
 .contentArea {
@@ -133,12 +141,17 @@ h1 {
   padding-bottom: 2vh;
 }
 
-.videoOne, .videoTwo, .videoThree, .videoFour {
+.videoOne,
+.videoTwo,
+.videoThree,
+.videoFour {
   position: relative;
   overflow: hidden;
 }
-
-.videoOne a, .videoTwo a, .videoThree a, .videoFour a {
+.videoOne a,
+.videoTwo a,
+.videoThree a,
+.videoFour a {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -146,23 +159,25 @@ h1 {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Inconsolata', monospace;
-  color: rgb(203, 210, 216);
-  text-shadow: 1px 1px 8px rgba(129, 129, 129, 0.582);
+  font-family: "Heebo", sans-serif;
+  color: #f7b32b;
   letter-spacing: 4px;
+  margin: 0 auto;
 }
-.videoOne a:hover, .videoTwo a:hover, .videoThree a:hover, .videoFour a:hover {
-  color: #FF7276;
+.videoOne a:hover,
+.videoTwo a:hover,
+.videoThree a:hover,
+.videoFour a:hover {
+  color: #ff7276;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-
 .navBar h1 {
   position: absolute;
-  color: rgb(185, 193, 201);
+  color: #f7b32b;
   font-size: 3rem;
   width: 30%;
 }
@@ -191,7 +206,6 @@ body::-webkit-scrollbar {
   background-image: url(./lab4.jpg);
   height: 100%;
   overflow: hidden;
-   padding-top: 15%;
+  padding-top: 15%;
   padding-left: 15%;
-  
 }

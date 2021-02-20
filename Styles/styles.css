@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +9,7 @@
   font-family: "MyWebFont";
   src: url("../Assets/NetworkFreeVersion.eot");
   /* IE9 Compat Modes */
-  src: url("../Assets/NetworkFreeVersion.eot") format("embedded-opentype"),
-    url("../Assets/NetworkFreeVersion.woff") format("woff"),
-    url("../Assets/NetworkFreeVersion.ttf") format("truetype"),
-    url("../Assets/NetworkFreeVersion.woff2") format("svg");
+  src: url("../Assets/NetworkFreeVersion.eot") format("embedded-opentype"), url("../Assets/NetworkFreeVersion.woff") format("woff"), url("../Assets/NetworkFreeVersion.ttf") format("truetype"), url("../Assets/NetworkFreeVersion.woff2") format("svg");
   /* Legacy iOS */
 }
 
@@ -26,10 +23,9 @@ html {
 .navBar {
   width: 100%;
   height: 10%;
-  padding-top: 1rem;
+  padding-top: 0.7rem;
   position: fixed;
   z-index: 100;
-  background-color: #111010;
 }
 
 .foldOutOne,
@@ -37,7 +33,7 @@ html {
 .foldOutThree {
   width: 35px;
   height: 5px;
-  background-color: #b9c1c9;
+  background-color: #f7b32b;
   margin: 6px 0;
   border-radius: 8px;
 }
@@ -76,7 +72,7 @@ html {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: #2b2b2b;
+  background-color: #e6e3df;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -85,29 +81,28 @@ html {
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 2px;
   text-decoration: none;
-  font-size: 36px;
-  color: #ffffff;
+  font-size: 5rem;
+  color: #e63946;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-family: "Inconsolata", monospace;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 4px;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #ff7276;
+  color: #f7b32b;
 }
 
 @media screen and (max-height: 450px) {
@@ -159,14 +154,14 @@ h1 {
   top: 50%;
   width: 100%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Inconsolata", monospace;
-  color: #ffffff;
-  text-shadow: 1px 1px 8px rgba(129, 129, 129, 0.582);
+  font-family: "Heebo", sans-serif;
+  color: #f7b32b;
   letter-spacing: 4px;
+  margin: 0 auto;
 }
 
 .videoOne a:hover,
@@ -182,7 +177,7 @@ body::-webkit-scrollbar {
 
 .navBar h1 {
   position: absolute;
-  color: #ffffff;
+  color: #f7b32b;
   font-size: 3rem;
   width: 30%;
 }
